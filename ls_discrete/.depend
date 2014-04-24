@@ -1,0 +1,22 @@
+bitfield.o: bitfield.c bitfield.h
+icoll.o: icoll.c jm.h /Applications/MATLAB74/extern/include/mex.h \
+  /Applications/MATLAB74/extern/include/matrix.h \
+  /Applications/MATLAB74/extern/include/tmwtypes.h icoll.h
+ls_discrete.o: ls_discrete.c jm.h \
+  /Applications/MATLAB74/extern/include/mex.h \
+  /Applications/MATLAB74/extern/include/matrix.h \
+  /Applications/MATLAB74/extern/include/tmwtypes.h ls_discrete.h speed.h \
+  icoll.h point.h move.h bitfield.h
+ls_discrete3.o: ls_discrete3.c jm.h \
+  /Applications/MATLAB74/extern/include/mex.h \
+  /Applications/MATLAB74/extern/include/matrix.h \
+  /Applications/MATLAB74/extern/include/tmwtypes.h ls_discrete.h speed.h \
+  icoll.h point.h move.h bitfield.h
+main_mex.o: main_mex.c /Applications/MATLAB74/extern/include/mex.h \
+  /Applications/MATLAB74/extern/include/matrix.h \
+  /Applications/MATLAB74/extern/include/tmwtypes.h jm.h icoll.h speed.h \
+  point.h ls_discrete.h
+move.o: move.c jm.h /Applications/MATLAB74/extern/include/mex.h \
+  /Applications/MATLAB74/extern/include/matrix.h \
+  /Applications/MATLAB74/extern/include/tmwtypes.h move.h point.h speed.h \
+  icoll.h bitfield.h
